@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/TeamPicker1.0/static/css/main.d3816127.css",
+    "main.js": "/TeamPicker1.0/static/js/main.728372c5.js",
+    "static/media/vsLine.png": "/TeamPicker1.0/static/media/vsLine.a2b5d2002ca1c9d1e42c.png",
+    "index.html": "/TeamPicker1.0/index.html",
+    "main.d3816127.css.map": "/TeamPicker1.0/static/css/main.d3816127.css.map",
+    "main.728372c5.js.map": "/TeamPicker1.0/static/js/main.728372c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3816127.css",
+    "static/js/main.728372c5.js"
+  ]
+}
