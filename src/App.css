@@ -1,38 +1,226 @@
+body {
+    background-color: black;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addPlayer {
+    width: 55%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* PICKER SECTION */
+
+.pikrDiv {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pikrInput {
+    margin: 15px 70px 26px 0px;
+    width: 30%;
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    background: transparent;
+    transition: border-color 0.2s;
+    font-family: 'Lato', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.pikrInput::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 27px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plusIcon {
+    font-size: 40px;
 }
+
+
+/* PLAYERS LIST SECTION */
+
+.playersCircle {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    background: rgb(225, 0, 255);
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.playersList {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+.playerP {
+    margin: 20px 0 5px;
+    color: rgb(146, 146, 146);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.readyIcon {
+    font-size: 20px;
+    float: right;
+    position: absolute;
+    color: rgb(21, 255, 21);
+}
+
+.readyIcon:hover {
+    color: red;
+}
+
+.vsLine {
+    width: 71px;
+    height: 436px;
+}
+
+.teamPicker {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.pickBtn {
+    width: 75%;
+    height: 100px;
+    font-size: 50px;
+    border-radius: 20px;
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 330px) and (max-width:500px) {
+    .addPlayer {
+        width: 90%;
+    }
+    .pikrInput {
+        width: 50%;
+        margin: 15px 120px 20px 0px;
+    }
+    .teamPicker {
+        width: 100%
+    }
+    .pickBtn {
+        width: 100%;
+        height: 100px;
+    }
+    .vsLine {
+        width: 49px;
+        height: 300px;
+    }
+    .playersCircle {
+        width: 59px;
+        height: 59px;
+        line-height: 59px;
+        margin-bottom: 10px;
+    }
+    .pikrInput::placeholder {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+    .playerP {
+        margin: 10px 0 5px;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 230px) and (max-width:330px) {
+    .addPlayer {
+        width: 95%;
+    }
+    .readyIcon {
+        font-size: 15px;
+    }
+    .pikrInput {
+        width: 80%;
+        margin: 15px 50px 10px 0px;
+    }
+    .teamPicker {
+        width: 100%
+    }
+    .pickBtn {
+        width: 100%;
+        height: 70px;
+        font-size: 30px;
+    }
+    .vsLine {
+        width: 36px;
+        height: 200px;
+    }
+    .playersCircle {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        font-size: 19px;
+    }
+    .pikrInput::placeholder {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+    .playerP {
+        margin: 10px 0 5px;
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 500px) and (max-width:1000px) {
+    .addPlayer {
+        width: 80%;
+    }
+    .pikrInput {
+        width: 50%;
+        margin: 15px 120px 20px 0px;
+    }
+    .teamPicker {
+        width: 100%
+    }
+    .pickBtn {
+        width: 100%;
+        height: 100px;
+    }
+    .vsLine {
+        width: 49px;
+        height: 300px;
+    }
+    .playersCircle {
+        width: 59px;
+        height: 59px;
+        line-height: 59px;
+        margin-bottom: 10px;
+    }
+    .pikrInput::placeholder {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+    .playerP {
+        margin: 10px 0 5px;
+        font-size: 24px;
+    }
+}
+
+;
